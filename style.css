@@ -18,26 +18,12 @@ body {
   margin: 0 auto;
 }
 
-/* Стиль всех параграфов p */
-.text {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  color: #5D5D5D;
-}
-
-/* Стиль заголовков h3 */
-.title {
-  font-size: 13px;
-  line-height: 16px;
-}
-
-header {
+nav {
   background-color: #222222;
   max-width: 100%;
 }
 
-header .caption {
+nav .caption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,23 +37,23 @@ header .caption {
           box-sizing: border-box;
 }
 
-header .caption_search_button {
+nav .caption_search_button {
   margin-left: 41px;
 }
 
-header .caption_nav {
+nav .caption_nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
 
-header .caption_nav_button {
+nav .caption_nav_button {
   padding-top: 9px;
   padding-right: 18px;
 }
 
-.top {
+header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,14 +63,14 @@ header .caption_nav_button {
   z-index: 0;
 }
 
-.top_image {
+header .image {
   width: 50%;
   background-image: url(img/main.png);
   background-repeat: no-repeat;
   background-position: right bottom;
 }
 
-.top_intro {
+header .intro {
   text-transform: uppercase;
   position: relative;
   top: 290px;
@@ -100,21 +86,67 @@ header .caption_nav_button {
   padding-left: 16px;
 }
 
-.top_intro_big {
+header .intro_big {
   font-weight: 900;
   font-size: 48px;
   line-height: 36px;
 }
 
-.top_intro_red {
+header .intro_red {
   font-size: 37px;
   font-weight: 700;
   line-height: 42px;
   color: #F16D7F;
 }
 
-.top_intro:hover {
+header_intro:hover {
   opacity: 1;
+}
+
+article {
+  background: #F8F3F4;
+}
+
+article .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+article .heading_title {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+}
+
+article .heading_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+article .heading_link {
+  text-decoration: none;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: 300;
+  color: #636363;
+}
+
+article .heading_adress {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
 }
 
 .offer_box {
@@ -130,10 +162,57 @@ header .caption_nav_button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 30px;
+  list-style: none;
 }
 
 .offer_box_line_2 {
   margin-bottom: 96px;
+  list-style: none;
+}
+
+.filt {
+  position: absolute;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  padding-top: 51px;
+  padding-bottom: 65px;
+}
+
+.filters {
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  font-weight: 400;
+  padding-top: 51px;
+  padding-bottom: 65px;
+}
+
+.filters .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filters .filter .choose {
+  margin-right: 28px;
+}
+
+.type {
+  display: none;
+}
+
+.filter_txt {
+  padding-right: 10px;
 }
 
 .cards {
@@ -273,8 +352,22 @@ header .caption_nav_button {
   display: flex;
 }
 
+.cards .card_btn:hover {
+  background-color: #F16D7F;
+  opacity: 0.8;
+}
+
 /* кнопка!....Мариаазаааа...*/
-.button {
+.browse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.browse_button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,9 +376,6 @@ header .caption_nav_button {
           justify-content: center;
   margin-top: 18px;
   margin-bottom: 95px;
-}
-
-.button_push {
   text-align: center;
   border: 1px solid #FF6A6A;
   padding: 14px 38px;
@@ -295,7 +385,7 @@ header .caption_nav_button {
   text-decoration: none;
 }
 
-.button_push:hover {
+.browse_button:hover {
   color: #000;
   background-color: #FF6A6A;
   opacity: 0.8;
@@ -303,11 +393,46 @@ header .caption_nav_button {
   transition: 0.3s;
 }
 
-.bottom {
+.carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 96px;
+}
+
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  border: 1px solid #EBEBEB;
+  padding: 15px 16px;
+  border-radius: 5px;
+}
+
+.page_link {
+  text-decoration: none;
+  overflow: hidden;
+  padding: 0 10px;
+  font-weight: 300;
+  font-size: 16px;
+  color: #636363;
+}
+
+.page_link:hover {
+  font-weight: 300;
+  font-size: 16px;
+  color: #EF5B70;
+}
+
+section {
   background: #222224;
 }
 
-.bottom .services {
+section .services {
   background: #222224;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -317,7 +442,7 @@ header .caption_nav_button {
           justify-content: space-between;
 }
 
-.bottom .services_service {
+section .services_service {
   width: 360px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -333,14 +458,14 @@ header .caption_nav_button {
   margin-top: 103px;
 }
 
-.bottom .services_title {
+section .services_title {
   font-size: 19.96px;
   line-height: 24px;
   color: #FBFBFB;
   margin-top: 25px;
 }
 
-.bottom .services_text {
+section .services_text {
   max-width: 360px;
   font-size: 13.972px;
   line-height: 17px;
@@ -356,7 +481,7 @@ footer {
 }
 
 footer .overal {
-  background-image: url(img/FooterBack.png);
+  background-image: url(img/footerback.png);
   background-size: cover;
 }
 
@@ -399,9 +524,11 @@ footer .overal_text {
   font-size: 18px;
   margin-bottom: 32px;
   line-height: 28px;
+  text-transform: uppercase;
 }
 
 footer .overal_text_big {
+  text-transform: uppercase;
   text-align: center;
   font-weight: 700;
   font-size: 24px;
