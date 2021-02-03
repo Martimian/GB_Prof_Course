@@ -152,6 +152,10 @@ article {
 .offer_box {
     margin-bottom: 30px;
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+
     &_line {
         display: flex;
         justify-content: space-between;
@@ -233,7 +237,6 @@ article {
         position: relative;
         flex-direction: column;
         width: 360px;
-        margin-right: 30px;
         margin-bottom: 30px;
         box-sizing: border-box;
         background: $textcolor;
@@ -297,10 +300,8 @@ article {
     
         &_line {
             display: flex;
-        }
-    
-        &_line2 {
-            display: flex;
+            flex-flow: wrap;
+            justify-content: space-evenly;
         }
 
         &_price {
