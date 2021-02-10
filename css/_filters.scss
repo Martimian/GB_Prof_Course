@@ -1,0 +1,47 @@
+.filt {
+    position: absolute;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    padding-top: 51px;
+    padding-bottom: 65px;
+}
+
+.filters {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    font-weight: 400;
+    padding-top: 51px;
+    padding-bottom: 65px;
+
+    .filter {
+        display: flex;
+
+        .choose {
+            margin-right: 28px;
+        }
+    }
+}
+
+.type {
+    display: none;
+}
+
+.filter_txt {
+    padding-right: 10px;
+}
+
+@media (max-width: 1024px) {
+   
+
+}    
+
+@media (max-width: 667px) {
+
+}

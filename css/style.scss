@@ -1,0 +1,75 @@
+
+/* Обнуление стилей */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Импорт шрифта из Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* стиль отображения страницы */
+body {
+    max-width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Центрирование страницы */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Разбивка страниц по стилям. */
+
+/*header*/
+@import "nav";
+@import "menu";
+@import "article";
+
+/* index.html */
+@import "figure";
+@import "offer_box";
+@import "cards";
+@import "section";
+
+/*-- особенности страниц --*/
+
+/* cart.html */
+
+@import "cart";
+
+/* product.html */
+@import "product";
+@import "description";
+
+/* catalog.html */
+@import "filters";
+@import "carousel";
+
+
+/* registration.html */
+
+@import "registration";
+@import "benefits";
+
+@import "footer";
+
+/* медиа-запросы */
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 735px;
+        margin: 0 auto;
+    }
+    
+
+}    
+
+@media (max-width: 667px) {
+    .container {
+        max-width: 359px;
+        margin: 0 auto;
+    }
+
+}

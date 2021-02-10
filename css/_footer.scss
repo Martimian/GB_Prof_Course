@@ -1,0 +1,120 @@
+footer {
+    background: #222222;
+
+    .overal {
+        background-image: url(../img/footerback.png);
+        background-size: cover;
+        
+        &_box {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &_photo {
+            width: 96px;
+            height: 96px;
+        }
+    
+        &_introduction {
+            margin-top: 97px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+    
+            &_text {
+                width: 360px;
+                font-size: 20px;
+                font-style: italic;
+                line-height: 24px;
+                text-align: center;
+                color: #222224;
+                margin-top: 30px;
+                margin-bottom: 126px;
+            }
+        }
+    
+        &_text {
+            text-align: center;
+            font-weight: bold;
+            font-weight: 400;
+            font-size: 18px;
+            margin-bottom: 32px;
+            line-height: 28px;
+            text-transform: uppercase;
+    
+            &_big {
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 38px;
+            }
+        }
+    
+        &_subscription {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-right: 80px;        
+    
+            &_figure {
+                width: 356px;
+                display: flex;
+                align-items: center;
+                color: #222224;
+                border: none;
+                background: #E1E1E1;
+                border-radius: 25px;
+                
+                &_enter {
+                    width: 256px;
+                    padding: 7px 64px 6px 22px;
+                    background: #E1E1E1;
+                    outline: none;
+                    border: none;
+                    border-radius: 25px;
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+    
+                &_submit { 
+                    padding: 17px;
+                    width: 100px;
+                    border: none;
+                    outline: none;
+                    font-size: 14px;
+                    line-height: 17px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    color: #FFFFFF;
+                    background: #F16D7F;
+                    border-top-right-radius: 25px;
+                    border-bottom-right-radius: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .overal {
+
+        &_box {
+            flex-direction: column;
+        }
+
+        &_subscription {
+            margin: 0px !important;
+            align-items: center;
+            padding-bottom: 140px;
+        }
+    }
+
+}    
+
+@media (max-width: 667px) {
+
+}

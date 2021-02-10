@@ -1,0 +1,194 @@
+
+aside {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 96px;
+    margin-bottom: 128px;
+
+    .item {
+        position: relative;
+        display: flex;
+        box-shadow: 17px 19px 24px 0px rgba(0, 0, 0, 0.13);
+        margin-bottom: 40px;
+        width: 650px;
+
+        img {
+            height: 306px;
+        }
+
+        &_description {
+            list-style: none;
+            padding: 22px 31px;
+        }
+
+        &_title {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            text-transform: uppercase;
+            color: #222222;
+            padding-bottom: 42px;
+        }
+
+        &_txt {
+            font-size: 22px;
+            line-height: 26px;
+            font-weight: 400;
+            color: #575757;
+            text-transform: capitalize;
+            padding-bottom: 6px;
+        }
+
+        &_price {
+            color: #F16D7F;
+        }
+
+        &_quantity {
+            margin-left: 40px;
+            padding: 0 15px;
+            box-sizing: border-box;
+            border: 1px solid #EAEAEA;
+            text-decoration: none;
+            font-size: 18px;
+            color: #656565;
+        }
+
+        &_closebtn {
+            position: absolute;
+            top: 28px;
+            right: 22px;
+        }
+    }
+
+    .links_box {
+        display: flex;
+        justify-content: space-between;
+
+        .link {
+            padding: 14px 40px;
+            border: 1px solid #A4A4A4;
+            text-decoration: none;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+            text-transform: uppercase;
+        }
+    }
+
+    .checkout {
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+
+        &_list {
+            list-style: none;
+
+        }
+
+        &_title {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            text-transform: uppercase;
+            color: #222222;
+            padding-bottom: 20px;
+        }
+
+        &_form {
+            padding-bottom: 20px;
+        }
+
+        &_inp {
+            width: 360px;
+            box-sizing: border-box;
+            padding: 13px 17px;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #B1B1B1;
+            text-transform: capitalize;
+            border: 1px solid #A4A4A4;
+            opacity: 0.8;
+            outline: none;
+        }
+        
+
+        &_quote {
+            margin-bottom: 57px;
+            padding: 9px 15px;
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 13px;
+            text-transform: uppercase;
+            color: #4A4A4A;
+            border: 1px solid #A4A4A4;
+            opacity: 0.8;
+        }
+        
+        .proceed {
+            display: flex;
+            flex-direction: column;
+            background: #F5F3F3;
+            padding: 40px 43px;
+            
+            &_sub {
+                align-self: flex-end;
+                font-size: 11px;
+                line-height: 13px;
+                font-weight: 400;
+                color: #4A4A4A;
+                text-transform: uppercase;
+            }
+
+            &_sub::after {
+                content: '  $900';
+                font-size: 11px;
+                line-height: 13px;
+                font-weight: 400;
+                color: #4A4A4A;
+                text-transform: uppercase;
+            }
+
+            &_grand {
+                align-self: flex-end;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                text-transform: uppercase;
+                color: #222222;
+                margin-bottom: 21px;
+            }
+
+            &_grand::after {
+                content:'$900';
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 19px;
+                text-transform: uppercase;
+                color: #F16D7F;
+            }
+
+            &_btn {
+                margin-top: 17px;
+                padding: 15px 37px;
+                text-transform: uppercase;
+                border: none;
+                background: #F16D7F;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+   
+
+}    
+
+@media (max-width: 667px) {
+
+}
