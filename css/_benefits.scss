@@ -1,0 +1,45 @@
+.benefits {
+    display: flex;
+    flex-direction: column;
+
+    &_title {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        text-transform: uppercase;
+        padding-bottom: 22px;
+    }
+
+    &_txt {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        padding-bottom: 21px;
+    }
+
+    &_list {
+        padding-left: 30px;
+
+        list-style-image: url(../img/marker.svg);
+    }
+
+    &_offer {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        padding-left: 10px;
+        padding-bottom: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+   
+
+}    
+
+@media (max-width: 667px) {
+
+}
