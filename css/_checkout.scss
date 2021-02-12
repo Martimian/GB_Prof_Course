@@ -1,0 +1,128 @@
+.checkout {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+
+    &_list {
+        list-style: none;
+
+    }
+
+    &_title {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: #222222;
+        padding-bottom: 20px;
+    }
+
+    &_form {
+        padding-bottom: 20px;
+    }
+
+    &_inp {
+        width: 360px;
+        box-sizing: border-box;
+        padding: 13px 17px;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+        text-transform: capitalize;
+        border: 1px solid #A4A4A4;
+        opacity: 0.8;
+        outline: none;
+    }
+    
+
+    &_quote {
+        margin-bottom: 57px;
+        padding: 9px 15px;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 13px;
+        text-transform: uppercase;
+        color: #4A4A4A;
+        border: 1px solid #A4A4A4;
+        opacity: 0.8;
+    }
+    
+    .proceed {
+        display: flex;
+        flex-direction: column;
+        background: #F5F3F3;
+        padding: 40px 43px;
+        
+        &_sub {
+            align-self: flex-end;
+            font-size: 11px;
+            line-height: 13px;
+            font-weight: 400;
+            color: #4A4A4A;
+            text-transform: uppercase;
+        }
+
+        &_sub::after {
+            content: '  $900';
+            font-size: 11px;
+            line-height: 13px;
+            font-weight: 400;
+            color: #4A4A4A;
+            text-transform: uppercase;
+        }
+
+        &_grand {
+            align-self: flex-end;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            text-transform: uppercase;
+            color: #222222;
+            margin-bottom: 21px;
+        }
+
+        &_grand::after {
+            content:'$900';
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 19px;
+            text-transform: uppercase;
+            color: #F16D7F;
+        }
+
+        &_btn {
+            margin-top: 17px;
+            padding: 15px 37px;
+            text-transform: uppercase;
+            border: none;
+            background: #F16D7F;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #FFFFFF;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .checkout {
+        display: flex;
+        flex-direction: inherit;
+        justify-content: space-between;
+        width: 100%;
+
+        .proceed {
+            height: 135px;
+            margin-top: 40px;
+        }
+    }
+
+
+}    
+
+@media (max-width: 667px) {
+    .checkout {
+        flex-direction: column;
+    }
+}

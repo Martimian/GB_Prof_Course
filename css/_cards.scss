@@ -146,6 +146,16 @@
 }
 
 @media (max-width: 1024px) {
+   .for_product {
+        .card:last-child {
+            display: none;
+        }
+
+        .card_box {
+            margin-bottom: 129px;
+        }
+   }
+
    
 
 }    

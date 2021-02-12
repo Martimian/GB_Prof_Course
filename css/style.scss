@@ -20,24 +20,30 @@ body {
     margin: 0 auto;
 }
 
+header {
+    background: #F8F3F4;
+}
+
 /* Разбивка страниц по стилям. */
 
 /*header*/
 @import "nav";
 @import "menu";
-@import "article";
+@import "heading";
+@import "section";
 
 /* index.html */
-@import "figure";
+@import "introduction";
 @import "offer_box";
 @import "cards";
-@import "section";
+@import "services";
 
 /*-- особенности страниц --*/
 
 /* cart.html */
 
-@import "cart";
+@import "your_cart";
+@import "checkout";
 
 /* product.html */
 @import "product";
@@ -63,7 +69,6 @@ body {
         margin: 0 auto;
     }
     
-
 }    
 
 @media (max-width: 667px) {
