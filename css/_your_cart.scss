@@ -1,0 +1,106 @@
+
+    .item {
+        position: relative;
+        display: flex;
+        box-shadow: 17px 19px 24px 0px rgba(0, 0, 0, 0.13);
+        margin-bottom: 40px;
+        width: 650px;
+
+        img {
+            height: 306px;
+        }
+
+        &_description {
+            list-style: none;
+            padding: 22px 31px;
+        }
+
+        &_title {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            text-transform: uppercase;
+            color: #222222;
+            padding-bottom: 42px;
+        }
+
+        &_txt {
+            font-size: 22px;
+            line-height: 26px;
+            font-weight: 400;
+            color: #575757;
+            text-transform: capitalize;
+            padding-bottom: 6px;
+        }
+
+        &_price {
+            color: #F16D7F;
+        }
+
+        &_quantity {
+            margin-left: 40px;
+            padding: 0 15px;
+            box-sizing: border-box;
+            border: 1px solid #EAEAEA;
+            text-decoration: none;
+            font-size: 18px;
+            color: #656565;
+        }
+
+        &_closebtn {
+            position: absolute;
+            top: 28px;
+            right: 22px;
+        }
+    }
+
+    .links_box {
+        display: flex;
+        justify-content: space-between;
+
+        .link {
+            padding: 14px 40px;
+            border: 1px solid #A4A4A4;
+            text-decoration: none;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+            text-transform: uppercase;
+        }
+    }
+
+
+@media (max-width: 1024px) {
+    .your_cart {
+        margin-bottom: 62px;
+    }
+
+ 
+
+}    
+
+@media (max-width: 667px) {
+
+
+    .item {
+        height: 188px;
+        width: 100%;
+
+        img {
+            width: 143px;
+            height: 188px;
+        }
+
+        &_title {
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222;
+        }
+
+        &_description {
+            padding: 13px 17px;
+        }
+
+    }
+}

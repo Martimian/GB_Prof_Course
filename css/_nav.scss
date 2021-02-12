@@ -70,6 +70,21 @@ nav {
 
 @media (max-width: 667px) {
     
+    .caption {
+        &_nav {
+            &_button {
+                padding: 0 !important;
+            }
+
+            &_button:last-child {
+                display: none;
+            }
+
+            &_cart {
+                display: none;
+            }
+        }
+    }
 
     .bottom {
         flex-direction: column-reverse;

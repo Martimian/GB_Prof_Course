@@ -97,10 +97,34 @@
 }
 
 @media (max-width: 1024px) {
-   
+    .description {
+        padding: 65px 107px;
+        
+        &_article {
+            margin-bottom: 31px !important;
+        }
+        
+        &_price {
+            &_hr {
+                width: 174px;
+            }
+        }
+    }
 
 }    
 
 @media (max-width: 667px) {
-
+    .description {
+        padding: 65px 25px;
+        
+        &_article {
+            margin-bottom: 31px !important;
+        }
+        
+        &_price {
+            &_hr {
+                width: 174px;
+            }
+        }
+    }
 }

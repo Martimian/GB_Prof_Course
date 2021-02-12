@@ -97,37 +97,39 @@
                         <li class="caption_nav_button">
                             <a class="caption_nav_button" href="registration.html"><img src="img/profile.svg" alt="profile"></a>
                         </li>
-                        <li>
+                        <li class="caption_nav_cart">
                             <a href="cart.html"><img src="img/cart.svg" alt="cart"></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-
-        <article>
-            <div class="container">
-                <div class="heading">
-                    <span class="heading_title">registration</span>
-                </div>
+        
+        <section id="heading">
+            <div class="heading">
+                <span class="heading_title">registration</span>
             </div>
-        </article>
+        </section>
     </header>
 
     <main>
-        <div class="container">
-            <aside>
+        <section id="registration">
+            
                 <form class="registration" action="">         
-                    <span>your name</span>          
-                    <input type="text" name="" id="">           
-                    <input type="text" name="" id="">             
-                    <input type="radio" name="" id="">
-                    <input type="radio" name="" id="">              
-                    <span>Login details</span>    
-                    <input type="text" name="" id="">
-                    <input type="text" viewport="password" name="" id="">
-                    <span>Please use 8&nbsp;or more characters, with at&nbsp;least 1&nbsp;number and a&nbsp;mixture of&nbsp;uppercase and lowercase letters</span>
-                    <button type="submit">join now</button>                                  
+                    <span class="registration_title">your name</span>          
+                    <input class="registration_inp" type="text" placeholder="first name" name="" id="">           
+                    <input class="registration_inp" type="text" placeholder="last name" name="" id="">
+                    <div class="registration_radio">             
+                        <input type="radio" name="sex" id="men"> 
+                        <span class="registration_radio_txt">men</span>
+                        <input type="radio" name="sex" id="woman"> 
+                        <span class="registration_radio_txt">women</span>              
+                    </div>
+                    <span class="registration_title">Login details</span>    
+                    <input class="registration_inp" type="email" placeholder="email" name="" id="">
+                    <input class="registration_inp" type="password" placeholder="password" name="" id="">
+                    <span class="registration_txt">Please use 8&nbsp;or more characters, with at&nbsp;least 1&nbsp;number and a&nbsp;mixture of&nbsp;uppercase and lowercase letters</span>
+                    <button class="registration_btn" type="submit">join now </button>                                  
                 </form>
                 <div class="benefits">
                     <span class="benefits_title">loyality has its perks</span>
@@ -140,8 +142,7 @@
                         <li class="benefits_offer">Exclusive offers & rewards</li>
                     </ul>
                 </div>
-            </aside>
-        </div>
+        </section>
     </main>
 
     <footer>

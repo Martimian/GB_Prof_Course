@@ -1,57 +1,37 @@
 section {
-    background: #222222;
+    max-width: 1140px;
+    margin: 0 auto;
+}
 
-    .services {
-        background: #222222;
-        display: flex;
-        justify-content: space-between;
+#registration {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+    margin-bottom: 96px;
+}
 
-        &_service {
-            width: 360px;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-            align-items: center;
-            margin-top: 103px;
-        }
-
-        &_title {
-            font-size: 19.96px;
-            line-height: 24px;
-            color: $textcolor;
-            margin-top: 25px;
-        }
-
-        &_text {
-            max-width: 360px;
-            font-size: 13.972px;
-            line-height: 17px;
-            color: $textcolor;
-            margin-top: 16px;
-            margin-bottom: 104px;
-            opacity: 0.7;
-        }
-    }   
+#cart {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 96px;
+    margin-bottom: 128px;
 }
 
 @media (max-width: 1024px) {
-    .services {
+    section {
+        max-width: 735px;
+        margin: 0 auto;
+    }
+
+    #cart {
         flex-direction: column;
-        align-items: center;
-        padding-bottom: 64px;
-
-        &_service {
-            margin-top: 48px !important;
-        }
-
-        &_text {
-            margin-bottom: 0px !important;
-        }
     }
 
 }    
 
 @media (max-width: 667px) {
-
+    section {
+        max-width: 359px;
+        margin: 0 auto;
+    }
 }
